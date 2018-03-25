@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层叠性2</title>
+    <style type="text/css">
+        #hezi1 .box2 p {
+            color: red;
+        }
+
+        div div #hezi3 p{
+            color: blue;
+        }
+
+        div.box1 div.box2 div.box3 p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="hezi1" class="box1">
+        <div id="hezi2" class="box2">
+            <div id="hezi3" class="box3">
+                <p>我是什么颜色</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

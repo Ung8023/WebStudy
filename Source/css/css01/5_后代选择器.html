@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <style type="text/css">
+        .div1 p {
+            color: #C81623;
+        }
+
+        .div1 .li2 p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <ul>
+        <li>
+            <p>aaa</p>
+            <p>aaa</p>
+            <p>aaa</p>
+        </li>
+        <li class="li2">
+            <p>aaa</p>
+            <p>aaa</p>
+            <p>aaa</p>
+        </li>
+        <li>
+            <p>aaa</p>
+            <p>aaa</p>
+            <p>aaa</p>
+        </li>
+    </ul>
+</div>
+
+<div>
+    <p>aaa</p>
+    <p>aaa</p>
+    <p>aaa</p>
+</div>
+</body>
+</html>

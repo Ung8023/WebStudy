@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>18_overflowhidden的IE6兼容</title>
+    <style type="text/css">
+        li {
+            float: left;
+            width: 90px;
+            height: 40px;
+            background-color: gold;
+            text-align: center;
+        }
+
+        .over {
+            overflow: hidden;
+            _zoom: 1;
+        }
+
+    </style>
+</head>
+<body>
+<div class="over" >
+    <ul>
+        <li>第1个li</li>
+        <li>第2个li</li>
+        <li>第3个li</li>
+        <li>第4个li</li>
+        <li>第5个li</li>
+    </ul>
+</div>
+<div >
+    <ul >
+        <li>第01个li</li>
+        <li>第02个li</li>
+        <li>第03个li</li>
+        <li>第04个li</li>
+        <li>第05个li</li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13_overflowhidden妙用</title>
+    <style type="text/css">
+        .box1 {
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: red;
+        }
+        .box2 {
+            width: 100px;
+            height: 200px;
+            float: left;
+            background-color: green;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 150px;
+            float: left;
+            background-color: blue;
+        }
+
+        .box {
+            border: 1px solid pink;
+            overflow: hidden;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</div>
+</body>
+</html>

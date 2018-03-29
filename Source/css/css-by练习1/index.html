@@ -23,8 +23,13 @@
             margin: 0 auto;
         }
 
-        .clearfix {
-
+        .clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            line-height: 0;
+            visibility: hidden;
+            clear: both;
         }
 
         div.header .content logo{
@@ -83,17 +88,31 @@
         }
 
         div.hot {
+            margin: 0 auto;
             width: 1002px;
             padding-top: 48px;
             padding-bottom: 42px;
         }
 
         div.hot ul li {
+            margin-right: 43px;
+            float: left;
+            width: 218px;
+            text-align: center;
+        }
 
+        div.hot ul li.last-child {
+            margin-right: 0;
         }
 
         div.hot ul li span {
             display: block;
+        }
+
+        div.hot ul li a.hot-play {
+            font-size: 12px;
+            color: #2FBC71;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -117,14 +136,37 @@
 
     <div class="hot clearfix">
         <ul >
-            <li><div class="hot-item">
-                    <img class="hot-img" src="images/pro1.jpg" alt="">
+            <li>
+                <div class="hot-item">
+                    <img class="hot-img" src="images/pro1.jpg" alt="" width="218" height="130">
                     <span class="hot-title">BPT宣传片</span>
-                    <span class="hot-play">点击播放<span></span></span>
+                    <a href="#" class="hot-play">点击播放&nbsp;<img src="images/sanjiaoxing.png" alt=""></a>
+                </div>
+            </li>
+            <li>
+                <div class="hot-item">
+                    <img class="hot-img" src="images/pro2.jpg" alt="" width="218" height="130">
+                    <span class="hot-title">宣传视频</span>
+                    <a href="#" class="hot-play">点击播放&nbsp;<img src="images/sanjiaoxing.png" alt=""></a>
+                </div>
+            </li>
+            <li>
+                <div class="hot-item">
+                    <img class="hot-img" src="images/pro3.jpg" alt="" width="218" height="130">
+                    <span class="hot-title">斗地主</span>
+                    <a href="#" class="hot-play">LANDLORDS&nbsp;<img src="images/sanjiaoxing.png" alt=""></a>
+                </div>
+            </li>
+            <li class="last-child">
+                <div class="hot-item">
+                    <img class="hot-img" src="images/pro4.jpg" alt="" width="218" height="130">
+                    <span class="hot-title">德州扑克</span>
+                    <a href="#" class="hot-play">TEXAS HOLD'EM POKER&nbsp;<img src="images/sanjiaoxing.png" alt=""></a>
                 </div>
             </li>
         </ul>
-
     </div>
+
+    <hr />
 </body>
 </html>

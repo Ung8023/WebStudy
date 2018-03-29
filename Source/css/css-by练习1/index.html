@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        div.header {
+            height: 60px;
+            background-color: #191D3A;
+        }
+
+        div.header .content {
+            width: 1002px;
+            margin: 0 auto;
+        }
+
+        .clearfix {
+
+        }
+
+        div.header .content logo{
+            float: left;
+        }
+
+        .header .content .nav li {
+            float: left;
+        }
+
+        .header .nav li a {
+            display: block;
+            height: 60px;
+            line-height: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-right: 1px solid #252947;
+            text-decoration: none;
+            color: #818496;
+        }
+
+        .header .nav li a.image {
+            display: block;
+            width: 100px;
+            height: 34px;
+            color: #191D3A;
+        }
+
+        .header .nav li a.join {
+            width: 100px;
+            padding: 0;
+            border: none;
+        }
+
+        .header .nav li.last-child {
+            padding-top: 13px;
+            padding-left: 48px;
+        }
+
+        .header .nav li a:hover {
+            color: #FFF;
+            background-color: #252947;
+        }
+
+        .header .nav li a.logo:hover {
+            background-color: #191D3A;
+        }
+
+        .header .nav li a.join:hover {
+            background-color: #191D3A;
+        }
+
+        div.banner {
+            background: url("images/banner.jpg") no-repeat center top;
+            height: 465px;
+        }
+
+        div.hot {
+            width: 1002px;
+            padding-top: 48px;
+            padding-bottom: 42px;
+        }
+
+        div.hot ul li {
+
+        }
+
+        div.hot ul li span {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="content">
+
+            <ul class="nav">
+                <li><a href="#" class="logo"><img src="images/logo.png" alt="logo"></a></li>
+                <li><a href="#"><span>首页</span></a></li>
+                <li><a href="#"><span>博雅游戏</span></a></li>
+                <li><a href="#"><span>博雅新闻</span></a></li>
+                <li><a href="#"><span>关于我们</span></a></li>
+                <li><a href="#"><span>客服中心</span></a></li>
+                <li><a href="#"><span>投资者关系</span></a></li>
+                <li class="last-child"><a href="#" class="image join"><img src="images/jrwm.png" alt="jrwm"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner"></div>
+
+    <div class="hot clearfix">
+        <ul >
+            <li><div class="hot-item">
+                    <img class="hot-img" src="images/pro1.jpg" alt="">
+                    <span class="hot-title">BPT宣传片</span>
+                    <span class="hot-play">点击播放<span></span></span>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15_z-index值</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: yellowgreen;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: skyblue;
+            position: relative;
+            top: 100px;
+            left: 30px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background: pink;
+            /*为了z-index值生效，必须加上一个定位：*/
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">绿</div>
+<div class="box2">蓝</div>
+<div class="box3">粉</div>
+</body>
+</html>

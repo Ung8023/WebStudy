@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08_父元素做参看点的含义</title>
+
+    <style type="text/css">
+        .parent {
+            width: 500px;
+            height: 500px;
+            border: 1px red solid;
+            position: relative;
+        }
+
+        .son {
+            width: 300px;
+            height: 300px;
+            border: 100px;
+        }
+
+        p {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="son">
+        <p></p>
+    </div>
+
+    <div class="box1">   →  相对定位
+        <div class="box2">  → 相对定位
+            <p></p>   → 绝对定位，将以box2为参考，因为box2是自己最近的父辈元素
+        </div>
+    </div>
+
+    <div>  → 绝对定位
+        <p></p>  → 绝对定位，将以div作为参考点。因为父亲定位了。
+    </div>
+</div>
+</body>
+</html>

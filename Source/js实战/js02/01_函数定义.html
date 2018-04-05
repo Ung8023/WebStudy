@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_函数定义</title>
+    <script type="text/javascript">
+        function add(x1, x2) {
+            return x1 + x2;
+        }
+
+        console.log(add(10));
+        console.log(add());
+        console.log(add(10, 20));
+
+        function a() {
+            console.log("a")
+        }
+
+        var b = function () {
+            console.log("b");
+        }
+
+        var c = new Function("console.log('c')");
+
+        a();
+        b();
+        c();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

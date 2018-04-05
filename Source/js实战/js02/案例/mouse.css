@@ -1,0 +1,30 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.mouse {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.mouse .big {
+    width: 360px;
+    height: 360px;
+    border: 1px gray solid;
+}
+
+.mouse ul {
+    width: 360px;
+    height: 70px;
+    border: 1px gray solid;
+    border-top: 0;
+}
+.mouse ul li {
+    float: left;
+}

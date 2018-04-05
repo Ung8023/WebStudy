@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08_对对象的解构赋值</title>
+</head>
+<body>
+<script>
+    var car = {
+        name: 'aodi',
+        speed: 120,
+        color: 'red'
+    };
+
+    var {name, speed, color} = car;
+    console.log("name = " + name + ", speed = " + speed + "color = " + color);
+
+    var {name:a, speed:b } = car;
+    console.log("name = " + a + ", speed = " + b + "color = " + color);
+
+</script>
+</body>
+</html>

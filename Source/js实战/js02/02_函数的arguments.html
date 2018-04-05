@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_函数的arguments</title>
+    <script>
+        function add() {
+            var sum = 0;
+            for (var i = 0; i< arguments.length; i ++) {
+                sum += arguments[i];
+            }
+            console.log(sum);
+        }
+
+        add(12, 23, 23, 434, 54);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

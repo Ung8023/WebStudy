@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09_对嵌套对象解构</title>
+</head>
+<body>
+<script>
+    var car = {
+        name: 'aodi',
+        speed: {
+            max: 240,
+            acc: 50
+        },
+        color: 'red'
+    };
+
+    var {name ,speed:{max, acc}} = car;
+
+    console.log("name = " + name + ", maxSpeed = " + max + ", acc = " + acc);
+</script>
+</body>
+</html>

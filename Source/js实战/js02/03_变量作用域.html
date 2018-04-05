@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03_变量作用域</title>
+    <script>
+        'use strict'
+
+        function func() {
+            var a = 0;
+            a = 12;
+        }
+
+        //a = 20; //Uncaught ReferenceError: a is not defined
+        //console.log(a);
+        func();
+
+        function a() {
+            var b = 10;
+            b = 20;
+            console.log(b);
+        }
+
+        function b() {
+            var b = 'x';
+            console.log(b);
+        }
+
+        a();
+        b();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

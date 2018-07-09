@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Android Note</title>
+    <link rel="stylesheet" href="../../css/editormd.preview.css" />
+    <link rel="stylesheet" href="../../css/pretttify.css" />
+    <link rel="stylesheet" href="../../css/content.css">
+
+    <!--Favicon-->
+    <link rel="icon" href="/images/favicon.ico">
+
+    <style type="text/css">
+
+        .code {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+    </style>
+
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+    <script src="../../js/marked.min.js"></script>
+    <script src="../../js/prettify.min.js"></script>
+
+    <script src="../../js/raphael.min.js"></script>
+    <script src="../../js/underscore.min.js"></script>
+    <script src="../../js/sequence-diagram.min.js"></script>
+    <script src="../../js/flowchart.min.js"></script>
+    <script src="../../js/jquery.flowchart.min.js"></script>
+
+    <script src="../../js/editormd.js"></script>
+    <script src="../../js/main.js"></script>
+    <script type="text/javascript">
+
+        var fileName = getQueryString("fileName");
+        var filePath = getQueryString("filePath");
+
+        console.log(filePath +"/"+ fileName + ".md")
+
+        window.onload = function (ev) {
+            $(function() {
+                var testEditormdView;
+
+                $.get(filePath + "/" + fileName + ".md", function(markdown) {
+
+                    testEditormdView = editormd.markdownToHTML("test-editormd-view2", {
+                        markdown        : markdown ,//+ "\r\n" + $("#append-test").text(),
+                        htmlDecode      : "style,script,iframe",  // you can filter tags decode
+                        tocm            : true,
+                        emoji           : true,
+                        taskList        : true,
+                        tex             : true,
+                        flowChart       : true,
+                        sequenceDiagram : true
+                    });
+                });
+            });
+        }
+
+    </script>
+
+</head>
+<body>
+<div class="content">
+    <div id="test-editormd-view2" class="code">
+        <textarea id="append-test" style="display:none;"></textarea>
+    </div>
+    <!-- 广告 -->
+    <div>
+        <br />
+        <hr />
+        <h2>推荐视频教程：</h2>
+        <a href="https://v.youku.com/v_show/id_XMzYzMTc3NjgyNA==.html?spm=a2hzp.8253876.0.0&f=51756756">Android从整体到局部系列视频教程戳我</a>
+        <h2>广告</h2>
+        <a href="https://ungws.taobao.com">我使用的装备：程序员必备 | 不伤关节  |  手感好  |  静电容  | Plum键盘|Niz键盘 戳我<br/>
+            <img src="https://img.alicdn.com/imgextra/i2/1080553455/TB2ZG6isDlYBeNjSszcXXbwhFXa_!!1080553455.png"/>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

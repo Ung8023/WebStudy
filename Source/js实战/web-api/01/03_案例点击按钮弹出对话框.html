@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03_案例点击按钮弹出对话框</title>
+</head>
+<body>
+    <!-- 第一种方式! -->
+    <!-- html与js混在一起，不方便后期的修改和维护，如果js代码逻辑复杂，会影响html的代码结构 -->
+    <input value="alert" type="button" onclick="alert('弹出')">
+
+    <script>
+        function f1() {
+            alert("弹出1");
+        };
+
+    </script>
+    <input value="alert1" type="button" onclick="f1()">
+
+    <input value="alert2" type="button" id="btn2">
+    <script>
+
+        function f2() {
+            alert("alert2")
+        }
+
+        var btn2 = document.getElementById("btn2");
+        btn2.onclick = f2;
+    </script>
+
+    <input value="alert3" type="button" id="btn3">
+    <script>
+        document.getElementById("btn3").onclick = function () {
+            alert("alert3");
+        }
+    </script>
+
+
+</body>
+</html>

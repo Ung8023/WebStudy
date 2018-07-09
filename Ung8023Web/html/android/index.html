@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Android笔记</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="/images/favicon.ico">
+
+    <script src="../../js/jquery-3.3.1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../css/jsmind.css"/>
+    <script type="text/javascript" src="../../js/jsmind.js"></script>
+    <style type="text/css">
+        #jsmind_container {
+            height: 1000px;
+        }
+
+        a.node {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Android 笔记</h1>
+<div id="jsmind_container"></div>
+<script>
+
+    var options = {
+        container: 'jsmind_container', // 容器id
+        editable: false,
+        theme: 'orange' // 主题
+    };
+    var jm = new jsMind(options);
+
+    $.getJSON("android.json", function (data) {
+        console.log(data);
+        jm.show(data);
+    });
+
+</script>
+</body>

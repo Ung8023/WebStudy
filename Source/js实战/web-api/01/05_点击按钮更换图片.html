@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05_点击按钮更换图片</title>
+</head>
+<body>
+<input type="button" id="btn" value="点击换图">
+<img src="" id="im">
+<script>
+    var image = document.getElementById("im")
+    var btnObj = document.getElementById("btn")
+    btnObj.onclick = function () {
+        image.src = "images/1.jpg"
+        image.width = "400"
+        image.height = "300"
+    }
+</script>
+</body>
+</html>

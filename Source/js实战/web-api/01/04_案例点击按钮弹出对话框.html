@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04_案例点击按钮弹出对话框</title>
+    <script>
+        //在文档还没加载完是就获取会失败
+        document.getElementById("btn").onclick = function () {
+            alert("messs");
+        }
+        //需要先有按钮才能设置
+
+    </script>
+</head>
+<body>
+
+    <input type="button" value="click" id="btn">
+    <script>
+
+        document.getElementById("btn").onclick = function () {
+            alert("aaaaalalal");
+        }
+
+    </script>
+
+</body>
+</html>

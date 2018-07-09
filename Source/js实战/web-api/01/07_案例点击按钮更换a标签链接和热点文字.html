@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07_案例点击按钮更换a标签链接和热点文字</title>
+</head>
+<body>
+<input id="btn" value="点击更换" type="button">    
+<a href="#" id="alink">空的</a>
+<script>
+    document.getElementById("btn").onclick = function () {
+        let aObj = document.getElementById("alink");
+        aObj.href = "http://www.ung8023.cn";
+        aObj.innerText = "笔记网站"
+    };
+    
+</script>    
+</body>
+</html>

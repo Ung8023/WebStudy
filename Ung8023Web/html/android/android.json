@@ -1,0 +1,19 @@
+{
+
+  "meta":{
+    "name":"Android Note",
+    "author":"Ung8023",
+    "version":"0.1"
+  },
+
+  "format":"node_tree",
+
+  "data":
+  {"id":"root","topic":"Android App 开发","children":[
+      {"id":"activity","topic":"Activity","direction":"left","expanded":true,"children":[
+        {"id":"lifecycle","topic":"<a href=\"android.html?fileName=lifecycle&filePath=activity/lifecycle\" class=\"node\" target=\"_blank\">Activity生命周期</a>"},
+        {"id":"launchMode","topic":"<a href=\"#\" class=\"node\" target=\"_blank\">Activity的启动模式</a>"},
+        {"id":"flags","topic":"<a href=\"#\" class=\"node\" target=\"_blank\">Activity的Flags</a>"}
+      ]}
+  ]}
+}
